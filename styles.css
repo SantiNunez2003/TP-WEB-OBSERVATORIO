@@ -1,0 +1,11 @@
+body{
+    color: black;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.barra-de-nagecacion{
+    display: flex;
+    
+}
