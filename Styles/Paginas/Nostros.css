@@ -1,0 +1,61 @@
+@import url('../colores.css');
+
+.contenedor-nosotros{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-nosotros{
+    font-size: 40px;
+    color:  var(--azul-claro);
+    text-align: start;
+}
+
+h3{
+    color: var(--azul-claro);
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f4f4f4;
+   
+}
+
+.nosotros-contenido{
+    width: 45%;
+    background-color: rgba(155, 154, 154, 0.623);
+    border: 2px solid white;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.articulo-nosotros h2{
+    font-size: 30px ;
+}
+
+.articulo-nosotros p{
+    line-height: 1.6;
+}
+
+.articulo-nosotros ul{
+    line-height: 1.6;
+}
+
+.articulo-nosotros div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articulo-nosotros img{
+    height: 400px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

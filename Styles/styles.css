@@ -2,6 +2,8 @@
 @import url('./Componentes/nav.css');
 @import url('./colores.css');
 @import url('./Componentes/hero-seleccion.css');
+@import url('./Componentes/lista-navegacion.css');
+@import url('./Paginas/Nostros.css');
 
 body{
     font-family: Arial, sans-serif;  
@@ -11,16 +13,11 @@ body{
     color: #333; 
     width: 100%; 
     min-height: 100vh;
-
+   
 }
 
 
 /*--------------------BARRA DE NAVEGACION------------------*/
-
-header{
-    position: fixed;
-    width: 100%;
-}
 
 a{
     color: var(--semi-blanco);
@@ -34,52 +31,9 @@ a:hover{
     text-decoration: underline;
 }
 
-
 /*--------------------SELECCION DE SITIO------------------*/
 
 
 /*-----------------NOSOTROS--------------*/
 
-.nosotros{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #f4f4f4;
-   
-}
-
-.nosotros-contenido{
-    width: 50%;
-    background-color: rgba(155, 154, 154, 0.623);
-    border: 2px solid white;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.articulo-nosotros h2{
-    font-size: 30px ;
-}
-
-.articulo-nosotros p{
-    line-height: 1.6;
-}
-
-.articulo-nosotros ul{
-    line-height: 1.6;
-}
-
-.articulo-nosotros div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.articulo-nosotros img{
-    height: 400px;
-    width: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 

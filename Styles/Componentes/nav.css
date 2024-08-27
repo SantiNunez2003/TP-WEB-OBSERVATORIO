@@ -4,26 +4,20 @@
     height: auto;
     width: auto;
     padding: 1px;
-    background-color: var(--azul-oscuro);
+    background-color: var(--azul-claro);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 2px;
+    width: 100%;
+    /*position: fixed;*/
 }
 
 .titulo-nav{
+    width: 100%;
     color: var(--semi-blanco);
-    letter-spacing: 2px;
-    text-align: start;
-    margin-left: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 30px;
 }
 
-.lista-de-navegacion{
-    width: 50%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    margin-right: 20px;
-    
-}
