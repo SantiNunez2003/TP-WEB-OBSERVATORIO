@@ -1,0 +1,29 @@
+@import url('../colores.css');
+
+.barra-de-navegacion{
+    height: auto;
+    width: auto;
+    padding: 1px;
+    background-color: var(--azul-oscuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.titulo-nav{
+    color: var(--semi-blanco);
+    letter-spacing: 2px;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.lista-de-navegacion{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-right: 20px;
+    
+}
