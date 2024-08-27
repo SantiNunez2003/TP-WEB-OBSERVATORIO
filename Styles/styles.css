@@ -4,18 +4,17 @@
 @import url('./Componentes/hero-seleccion.css');
 @import url('./Componentes/lista-navegacion.css');
 @import url('./Paginas/Nostros.css');
+@import url('./Componentes/footer.css');
+@import url('./Paginas/Noticias.css');
 
 body{
     font-family: Arial, sans-serif;  
-    margin: 0; 
-    padding: 0; 
     background-color: var(--semi-blanco); 
     color: #333; 
     width: 100%; 
     min-height: 100vh;
    
 }
-
 
 /*--------------------BARRA DE NAVEGACION------------------*/
 
@@ -30,10 +29,5 @@ a{
 a:hover{
     text-decoration: underline;
 }
-
-/*--------------------SELECCION DE SITIO------------------*/
-
-
-/*-----------------NOSOTROS--------------*/
 
 
