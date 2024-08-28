@@ -46,11 +46,14 @@
     align-items: start;
     padding: 20px;
     height: 20px;
+    width: 100%;
 }
 
-.formulario input, .formulario select{
-    width: min(500px);
+.formulario input{
+    max-width: 500px;
+    width: 100%;
     padding: 5px;
+    margin: 20px;
 
 }
 
@@ -58,12 +61,12 @@
     background-color: var(--azul-oscuro);
     color: var(--semi-blanco);
     padding: 10px 20px;
+    margin-bottom: 15px;
     border: none;
     border-radius: 5px;
     font-size: 15px;
     font-weight: 400;
     cursor: pointer;
-    text-align: center;
     text-decoration: none;
     display: inline-block; 
 }
