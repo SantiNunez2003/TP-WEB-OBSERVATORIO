@@ -15,7 +15,8 @@
     align-items: center;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) ,
     -10px -10px 10px rgba(255, 255, 255, 0.3) ;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 40px;
 }
 
 .evento-datos h1{
@@ -23,11 +24,8 @@
     margin-bottom: 20px;
 }
 
-
-
 .evento-elegido img{
     width: 100%;
-    
 }
 
 .formulario-evento{

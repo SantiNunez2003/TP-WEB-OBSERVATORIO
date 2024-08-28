@@ -1,90 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuestras Imagenes | Observatorio de las Misiones</title>
-    <link rel="stylesheet" href="/Codigo/styles.css">
-</head>
-<body>
-    <!-- Barra de Navegación -->
-    <header class="headerObservatorio">
-        <nav class="barra-de-navegacion">
-            <ul class="lista-de-navegacion">
-                <li><a class="nav-link" href="/Codigo/index.html">Nosotros</a></li>
-                <li><a class="nav-link" href="/Codigo/Noticias.html">Noticias</a></li>
-                <div>
-                    <img class="nav-icono-observatorio" src="/Icons/Observatory Icon.svg" alt="Icono de Observatorio">
-                </div>
-                <li><a class="nav-link" href="/Codigo/Galeria.html">Galeria</a></li>
-                <li><a class="nav-link" href="/Codigo/Eventos.html">Eventos</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="/Styles/styles.css" />
+  </head>
+  <body>
+    <!-- Titulo de Pagina -->
+    <header class="titulo">
+      <h1>Observatorio de las Misiones</h1>
     </header>
 
-    <!-- Selección de Sitio -->
-    <section class="seleccion">
-        <h1 class="titulo-seleccion">
-            Observatorio de las Misiones
-        </h1>
+    <main>
+        
+      <!-- Imagen Hero -->
+      <section class="seleccion">
+        <article class="contenedor-seleccion">
+          <div>
+            <img
+              class="imagen-seleccion"
+              src="/Image/Observatorio-background-lines.svg"
+              alt="Imagen de Observatorio"
+            />
+          </div>
+        </article>
+      </section>
 
-        <div >
-            <img class="imagen-seleccion" src="/Imgane/Imagen_Luna-2.png" alt="Imagen de Luna">
-        </div>
-
-        <!-- Enlaces con Iconos -->
-        <ul class="lista-de-seleccion">
+      <section class="contenedor-galeria">
+        
+        <!-- Navegacion con Iconos -->
+        <nav class="barra-de-navegacion">
+          <ul class="lista-de-seleccion">
             <li>
-                <a class="nav-link" href="/index.html">
-                    <img class="icono-seleccion" src="/Icons/Observatory Icon.svg" alt="Icono de Observatorio">
-                    Nosotros
-                </a>
+              <a href="/index.html"
+                ><img
+                  class="icono-seleccion"
+                  src="/Icons/Oscuro/Observatory-Icon-oscuro.svg"
+                  alt="Icono de Observatorio"
+                />
+                Nosotros
+              </a>
             </li>
             <li>
-                <a class="nav-link" href="/Noticias.html">
-                    <img class="icono-seleccion" src="/Icons/Noticia Icon.svg" alt="Icono Noticia">  
-                    Noticias
-                </a>
+              <a href="./Noticias.html">
+                <img
+                  class="icono-seleccion"
+                  src="/Icons/Oscuro/Noticias-oscuro.svg"
+                  alt="Icono Noticia"
+                />
+                Noticias
+              </a>
             </li>
             <li>
-                <a class="nav-link" href="/Nuestras_Imagenes.html">
-                    <img class="icono-seleccion" src="/Icons/Telescopio Icon.svg" alt="Icono Telescopio"> 
-                    Galeria
-                </a>
+              <a href="./Galeria.html"
+                ><img
+                  class="icono-seleccion"
+                  src="/Icons/Oscuro/Telescopio-oscuro.svg"
+                  alt="Icono Telescopio"
+                />
+                Galeria
+              </a>
             </li>
             <li>
-                <a class="nav-link" href="/Eventos.html">
-                    <img class="icono-seleccion" src="/Icons/Evento Icon.svg" alt="Icono Evento"> 
-                    Eventos
-                </a>
+              <a href="/Eventos.html"
+                ><img
+                  class="icono-seleccion"
+                  src="/Icons/Oscuro/Eventos-oscuro.svg"
+                  alt="Icono Evento"
+                />
+                Eventos
+              </a>
             </li>
-        </ul>
-    </section>
+          </ul>
+        </nav>
 
-    <!-- Sección Nuestras Imágenes -->
-    <section id="nuestras-imagenes">
-        <header>
-            <h1>Nuestras Imágenes</h1>
-        </header>
+        <h1>Nuestras Imágenes</h1>
 
-        <div class="galeria">
+        <!-- Sección Nuestras Imágenes -->
+        <section class="galeria-grid">
+          <div class="imagen-box">
             <!-- Imágenes -->
             <figure>
-                <img src=" " alt="Descripción de la imagen 1">
-                <figcaption>Descripción de la imagen 1</figcaption>
+              <img src="/Image/prueba-imagen.jfif" alt="Descripción de la imagen 1" />
+              <figcaption>Descripción de la imagen 1</figcaption>
             </figure>
 
             <figure>
-                <img src="" alt="Descripción de la imagen 2">
-                <figcaption>Descripción de la imagen 2</figcaption>
+              <img src="/Image/Observatorio-Imagen-2.webp" alt="Descripción de la imagen 2" />
+              <figcaption>Descripción de la imagen 2</figcaption>
             </figure>
 
             <figure>
-                <img src="" alt="Descripción de la imagen 3">
-                <figcaption>Descripción de la imagen 3</figcaption>
+              <img src="/Image/Observatorio-Imagen.png" alt="Descripción de la imagen 3" />
+              <figcaption>Descripción de la imagen 3</figcaption>
             </figure>
 
+            <!-- Imágenes -->
+            <figure >
+                <img src="/Image/prueba-imagen.jfif" alt="Descripción de la imagen 1" />
+                <figcaption>Descripción de la imagen 4</figcaption>
+              </figure>
+  
+              <figure>
+                <img src="/Image/Observatorio-Imagen-2.webp" alt="Descripción de la imagen 2" />
+                <figcaption>Descripción de la imagen 5</figcaption>
+              </figure>
+  
+              <figure>
+                <img src="/Image/Observatorio-Imagen.png" alt="Descripción de la imagen 3" />
+                <figcaption>Descripción de la imagen 6</figcaption>
+              </figure>
+            
+              <!-- Imágenes -->
+            <figure >
+                <img src="/Image/prueba-imagen.jfif" alt="Descripción de la imagen 1" />
+                <figcaption>Descripción de la imagen 7</figcaption>
+              </figure>
+  
+              <figure>
+                <img src="/Image/Observatorio-Imagen-2.webp" alt="Descripción de la imagen 2" />
+                <figcaption>Descripción de la imagen 8</figcaption>
+              </figure>
+  
+              <figure>
+                <img src="/Image/Observatorio-Imagen.png" alt="Descripción de la imagen 3" />
+                <figcaption>Descripción de la imagen 9</figcaption>
+              </figure>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-contenido">
+        <div class="footer-info">
+          <p>Teléfono: <a href="tel:+123456789">+123 456 789</a></p>
+          <p>
+            Email:
+            <a href="mailto:observatorio.misiones@gmail.com"
+              >observatorio.misiones@gmail.com</a
+            >
+          </p>
         </div>
-    </section>
-</body>
+        <!--Incluir Redes-->
+      </div>
+      <div class="footer-copy">
+        <p>
+          &copy; 2024 Observatorio de las Misiones. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

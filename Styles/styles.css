@@ -8,6 +8,7 @@
 @import url('./Paginas/Noticias.css');
 @import url('./Paginas/Eventos.css');
 @import url('./Paginas/Evento-elegido.css');
+@import url('./Paginas/Galeria.css');
 
 body{
     font-family: Arial, sans-serif;  

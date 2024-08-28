@@ -12,6 +12,7 @@
     background-color: var(--semi-blanco);
     position: sticky;
     top: 0px;
+    z-index: 1;
 }
 
 .lista-de-seleccion{

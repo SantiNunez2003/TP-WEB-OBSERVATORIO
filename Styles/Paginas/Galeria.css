@@ -1,0 +1,42 @@
+@import url("../colores.css");
+
+.contenedor-galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria-grid {
+    max-width: 1240px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr)); 
+    gap: 10px; 
+}
+
+.galeria-grid img {
+    z-index: 0;
+    width: 400px; 
+    height: 300px;
+    object-fit: fill;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) ,
+    -10px -10px 10px rgba(255, 255, 255, 0.5)  ;
+}
+
+.imagen-box{
+    display: contents;
+}
+
+.imagen-box figure{
+    width: 100%;   
+}
+
+.imagen-box figcaption{
+    font-weight: 600;
+}
+
+.imagen-box figure:hover {
+    scale: 1.2;
+}
+
