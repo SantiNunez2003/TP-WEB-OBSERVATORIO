@@ -1,0 +1,58 @@
+@import url('../colores.css');
+
+.contenedor-eventos{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0 25px
+}
+
+
+.eventos{
+    width: min(1000px , 80%);
+}
+
+.encabezado-tabla th{
+    font-size: 20px;
+}
+
+
+.linea-evento{
+    margin-top: 100px ;
+    padding-top: 10px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) ,
+    -10px -10px 10px rgba(255, 255, 255, 0.3) ;
+}
+.linea-evento:hover{
+    background-color: var(--grisaceo);
+}
+
+.contenido-tabla img{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+.contenido-evento{
+    padding-left: 30px;
+}
+
+.contenido-evento h2{
+    color: var(--azul-claro);
+}
+
+.fecha{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.boton-evento{
+    text-align: center;
+    width: 15%;
+}
+

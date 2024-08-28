@@ -1,9 +1,10 @@
 @import url('../colores.css');
 
 .barra-de-navegacion{
-    padding: 1px;
     background-color: var(--azul-claro);
     padding: 2px;
+    
+    
     /*position: fixed;*/
 }
 
@@ -12,5 +13,6 @@
     letter-spacing: 3px;
     text-align: center;
     font-size: 30px;
+    
 }
 

@@ -6,6 +6,8 @@
 @import url('./Paginas/Nostros.css');
 @import url('./Componentes/footer.css');
 @import url('./Paginas/Noticias.css');
+@import url('./Paginas/Eventos.css');
+@import url('./Paginas/Evento-elegido.css');
 
 body{
     font-family: Arial, sans-serif;  
@@ -13,6 +15,8 @@ body{
     color: #333; 
     width: 100%; 
     min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
    
 }
 

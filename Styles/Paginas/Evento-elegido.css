@@ -1,0 +1,77 @@
+@import url('../colores.css');
+
+.contenedor-evento-elegido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.evento-elegido{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) ,
+    -10px -10px 10px rgba(255, 255, 255, 0.3) ;
+    padding: 20px;
+}
+
+.evento-datos h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.evento-elegido img{
+    width: 100%;
+    
+}
+
+.formulario-evento{
+    margin: 30px;
+    width: 80%;
+    background-color: var(--azul-claro);
+    padding: 10px;
+    color: var(--semi-blanco);
+    text-align: center;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) inset,
+    -10px -10px 10px rgba(255, 255, 255, 0.3) ;
+}
+
+.formulario div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    height: 20px;
+}
+
+.formulario input, .formulario select{
+    width: min(500px);
+    padding: 5px;
+
+}
+
+.boton-registrarse{
+    background-color: var(--azul-oscuro);
+    color: var(--semi-blanco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.boton-registrarse:hover{
+    background-color: var(--semi-blanco);
+    color: var(--azul-oscuro);
+    font-weight: 400;
+}
