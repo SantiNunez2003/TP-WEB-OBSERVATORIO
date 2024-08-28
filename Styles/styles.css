@@ -34,4 +34,12 @@ a:hover{
     text-decoration: underline;
 }
 
+h1{
+    font-size: 40px;
+    color:  var(--azul-claro);
+    text-align: start;
+    margin-top: 5px;
+    
+}
+
 

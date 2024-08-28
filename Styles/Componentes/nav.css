@@ -1,18 +1,4 @@
 @import url('../colores.css');
 
-.barra-de-navegacion{
-    background-color: var(--azul-claro);
-    padding: 2px;
-    
-    
-    /*position: fixed;*/
-}
 
-.titulo-nav{
-    color: var(--semi-blanco);
-    letter-spacing: 3px;
-    text-align: center;
-    font-size: 30px;
-    
-}
 

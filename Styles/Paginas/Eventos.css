@@ -54,5 +54,17 @@ table{
 .boton-evento{
     text-align: center;
     width: 15%;
+    background-color: var(--gris-azulado) ;
+}
+
+.boton-evento .boton-mas-info{
+    background-color: var(--azul-claro);
+    letter-spacing: 1px; 
+}
+
+.boton-evento .boton-mas-info:hover{
+    background-color: var(--semi-blanco);
+    color: var(--azul-oscuro);
+    text-decoration: none; 
 }
 

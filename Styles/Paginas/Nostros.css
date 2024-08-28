@@ -7,6 +7,19 @@
     align-items: center;
 }
 
+.titulo{
+    background-color: var(--azul-claro);
+    padding: 0.5px;
+}
+
+.titulo h1{
+    color: var(--semi-blanco);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
 .titulo-nosotros{
     font-size: 40px;
     color:  var(--azul-claro);
