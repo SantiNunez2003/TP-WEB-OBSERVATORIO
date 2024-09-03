@@ -22,6 +22,16 @@ main section {
   font-weight: 400;
   letter-spacing: 2px;
   border-bottom: 2px solid var(--verde-lima);
+  position: relative;
+}
+
+.presentacion h2::before {
+  content: '';
+  position: absolute;
+  top: 32px;
+  width: 95px; 
+  height: 6px; 
+  background-color:var(--verde-lima); 
 }
 
 .presentacion a {
@@ -31,10 +41,23 @@ main section {
 .presentacion ul {
   padding-top: 10px;
   padding-bottom: 10px;
-  list-style-type: square;
+  list-style-type: none;
 }
 
+.presentacion ul, .presentacion li {
+  position: relative;
+  padding-left: 30px; 
+}
 
+.presentacion ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 8px; 
+  height: 8px; 
+  background-color: black; 
+}
 
 .texto-decorado{
   border-left: 10px solid var(--verde-lima);

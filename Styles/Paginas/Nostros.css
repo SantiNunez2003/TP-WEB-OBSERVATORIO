@@ -23,7 +23,7 @@
 .titulo-nosotros{
     font-size: 40px;
     color:  var(--azul-claro);
-    text-align: start;
+    text-align: center;
 }
 
 h3{
@@ -31,6 +31,7 @@ h3{
 }
 
 .nosotros{
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
