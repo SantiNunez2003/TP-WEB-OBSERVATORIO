@@ -1,0 +1,70 @@
+@import url('../colors.css');
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--verde-lima);
+    background-color: var(--gris-oscuro);
+}
+
+.header .logo p, .logo h1{
+    font-family: 'Times New Roman', Times, serif;
+    margin: -10px;
+}
+
+.logo h1{
+    font-size: 28px;
+    font-weight: 200;
+    margin-right: 250px;
+}
+
+.logo p{
+    font-size: 10px;
+    padding-left: 15px;
+    color: hsl(75, 47%, 74%);
+}
+
+.header nav{
+    background-color: var(--gris);
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1) inset,
+    -1px -1px 1px rgba(255, 255, 255, 0.1) inset,
+    1px 1px 1px rgba(1, 1, 1, 0.4),
+    -1px -1px 1px rgba(1, 1, 1, 0.4);
+   
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.header li{
+    border-left: 3px solid var(--gris-oscuro);
+}
+
+.header li:first-child {
+    border-left: none; 
+}
+
+.header a{
+    color: var(--gris-claro);
+    text-decoration: none;
+    padding: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header a.activo{
+    color: var(--verde-lima);
+}
+
+
+
+
