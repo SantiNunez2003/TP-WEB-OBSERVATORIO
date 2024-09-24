@@ -5,7 +5,7 @@ import { modelo_noticia_2 } from "../Models/noticias_models/modelo_noticia_2.js"
 export async function crearNoticia() {
   try {
 
-    // Hacemos la peticion de datos por medio de promesas
+    // Hacemos la peticion de datos por medio de promesas asinconicas para no interrumppir la ejecucion del js
     const res = await fetch("../Js/Data/noticias.json");
     const data = await res.json();
 

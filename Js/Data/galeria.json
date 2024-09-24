@@ -1,0 +1,53 @@
+{
+    "imagen": [
+      {
+        "img": "../Image/prueba-imagen.jfif",
+        "descripcion": "Descripción de la imagen 1"
+      },
+      {
+        "img": "../Image/Observatorio-Imagen-2.webp",
+        "descripcion": "Descripción de la imagen 2"
+      },
+      {
+        "img": "../Image/Observatorio-Imagen.png",
+        "descripcion": "Descripción de la imagen 3"
+      },
+      {
+        "img": "../Image/prueba-imagen.jfif",
+        "descripcion": "Descripción de la imagen 4"
+      },
+      {
+        "img": "../Image/Observatorio-Imagen-2.webp",
+        "descripcion": "Descripción de la imagen 5"
+      },
+      {
+        "img": "../Image/Observatorio-Imagen.png",
+        "descripcion": "Descripción de la imagen 6"
+      },
+      {
+        "img": "../Image/prueba-imagen.jfif",
+        "descripcion": "Descripción de la imagen 7"
+      },
+      {
+        "img": "../Image/Observatorio-Imagen-2.webp",
+        "descripcion": "Descripción de la imagen 8"
+      },
+      {
+        "img": "../Image/Observatorio-Imagen.png",
+        "descripcion": "Descripción de la imagen 9"
+      },
+      {
+        "img": "../Image/prueba-imagen.jfif",
+        "descripcion": "Descripción de la imagen 10"
+      },
+      {
+        "img": "../Image/Observatorio-Imagen-2.webp",
+        "descripcion": "Descripción de la imagen 11"
+      },
+      {
+        "img": "../Image/Observatorio-Imagen.png",
+        "descripcion": "Descripción de la imagen 12"
+      }
+    ]
+  }
+  
