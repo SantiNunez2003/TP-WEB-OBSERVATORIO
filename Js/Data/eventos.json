@@ -1,0 +1,53 @@
+{
+    "evento": [
+      {
+        "img_evento": "../Image/Observatorio-Imagen.png",
+        "titulo_evento": "Evento 1",
+        "fecha_hora": "2024-10-01 14:00",
+        "descripcion_evento": "Descripción detallada del Evento 1."
+      },
+      {
+        "img_evento": "../Image/prueba-imagen.jfif",
+        "titulo_evento": "Evento 2",
+        "fecha_hora": "2024-10-05 18:00",
+        "descripcion_evento": "Descripción detallada del Evento 2."
+      },
+      {
+        "img_evento": "../Image/prueba-imagen.jfif",
+        "titulo_evento": "Evento 3",
+        "fecha_hora": "2024-10-10 09:00",
+        "descripcion_evento": "Descripción detallada del Evento 3."
+      },
+      {
+        "img_evento": "../Image/prueba-imagen.jfif",
+        "titulo_evento": "Evento 4",
+        "fecha_hora": "2024-10-15 16:00",
+        "descripcion_evento": "Descripción detallada del Evento 4."
+      },
+      {
+        "img_evento": "../Image/prueba-imagen.jfif",
+        "titulo_evento": "Evento 5",
+        "fecha_hora": "2024-10-20 11:00",
+        "descripcion_evento": "Descripción detallada del Evento 5."
+      },
+      {
+        "img_evento": "../Image/prueba-imagen.jfif",
+        "titulo_evento": "Evento 6",
+        "fecha_hora": "2024-10-25 15:00",
+        "descripcion_evento": "Descripción detallada del Evento 6."
+      },
+      {
+        "img_evento": "../Image/prueba-imagen.jfif",
+        "titulo_evento": "Evento 7",
+        "fecha_hora": "2024-10-30 17:00",
+        "descripcion_evento": "Descripción detallada del Evento 7."
+      },
+      {
+        "img_evento": "../Image/prueba-imagen.jfif",
+        "titulo_evento": "Evento 8",
+        "fecha_hora": "2024-11-03 13:00",
+        "descripcion_evento": "Descripción detallada del Evento 8."
+      }
+    ]
+  }
+  

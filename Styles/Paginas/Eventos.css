@@ -12,7 +12,6 @@ table{
     border-spacing: 0 25px
 }
 
-
 .eventos{
     width: min(1000px , 80%);
 }
@@ -21,10 +20,7 @@ table{
     font-size: 20px;
 }
 
-
 .linea-evento{
-    margin-top: 100px ;
-    padding-top: 10px;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) ,
     -10px -10px 10px rgba(255, 255, 255, 0.3) ;
 }
@@ -32,17 +28,19 @@ table{
     background-color: var(--grisaceo);
 }
 
-.contenido-tabla img{
-    width: 300px;
-    height: auto;
+.imagen-evento{
+    width: 200px;
+}
+
+.linea-evento img{
+    max-width: 300px;
+    max-height: 200px;
+    height: 200px;
     padding: 20px;
+    align-items: center;
 }
 
-.contenido-evento{
-    padding-left: 30px;
-}
-
-.contenido-evento h2{
+.linea-evento h2{
     color: var(--azul-claro);
 }
 
