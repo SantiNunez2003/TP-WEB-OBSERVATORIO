@@ -1,7 +1,7 @@
-import { crearEvento } from './Controllers/evento-controller.js';
-import { crearGaleria } from './Controllers/galeria-controller.js';
-import { crearNoticia } from './Controllers/noticia-controller.js';
+import { componenteEvento } from "./Controllers/evento-controller.js";
+import { comoponeteGaleria } from "./Controllers/galeria-controller.js";
+import { componenteNoticia } from "./Controllers/noticia-controller.js";
 
-crearNoticia();
-crearGaleria();
-crearEvento();
+componenteNoticia();
+comoponeteGaleria();
+componenteEvento();

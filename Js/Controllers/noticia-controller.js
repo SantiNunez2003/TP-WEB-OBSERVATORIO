@@ -1,8 +1,8 @@
-import { modelo_noticia_1 } from "../Models/noticias_models/modelo_noticia_1.js";
-import { modelo_noticia_2 } from "../Models/noticias_models/modelo_noticia_2.js";
+import { modelo_noticia_1 } from "../Models/noticias_models/modelo-noticia_1.js";
+import { modelo_noticia_2 } from "../Models/noticias_models/modelo-noticia_2.js";
 
 /*FUNCION PARA CREAR COMPONENTES*/
-export async function crearNoticia() {
+export async function componenteNoticia() {
   try {
 
     // Hacemos la peticion de datos por medio de promesas asinconicas para no interrumppir la ejecucion del js

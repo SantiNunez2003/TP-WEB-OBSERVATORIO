@@ -1,6 +1,6 @@
-import { modelo_galeria } from "../Models/modelo_galeria.js";
+import { modelo_galeria } from "../Models/modelo-galeria.js";
 
-export async function crearGaleria() {
+export async function comoponeteGaleria() {
   try {
     // Hacemos la peticion de datos por medio de promesas asinconicas para no interrumppir la ejecucion del js
     const res = await fetch("../Js/Data/galeria.json");
