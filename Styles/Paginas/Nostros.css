@@ -1,33 +1,11 @@
 @import url('../colores.css');
 
-.contenedor-nosotros{   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo{
-    background-color: var(--azul-claro);
-    padding: 0.5px;
-}
-
-.titulo h1{
-    color: var(--semi-blanco);
-    text-align: center;
-    padding-top: 15px;
-    font-size: 35px;
-    letter-spacing: 3px;
-}
-
 .titulo-nosotros{
-    font-size: 40px;
-    color:  var(--azul-claro);
     text-align: center;
 }
 
-h3{
-    color: var(--azul-claro);
+.subtitulo-nosotros{
+    margin: 0px;
 }
 
 .nosotros{
@@ -35,42 +13,31 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: #f4f4f4;
-   
+    align-items: center; 
 }
 
 .nosotros-contenido{
-    width: 45%;
-    background-color: rgba(155, 154, 154, 0.623);
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) ,
-    -10px -10px 10px rgba(255, 255, 255, 0.3) ;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.articulo-nosotros h2{
-    font-size: 30px ;
+    width: 50%;
+    background-color: var(--grisaceo);
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304),
+                -10px -10px 10px rgba(255, 255, 255, 0.3);
+    padding: 20px 50px 20px 50px; /*Arriba, Derecha, Abajo, Izquierda*/
 }
 
 .articulo-nosotros p{
+    font-size: var(--rspSize);
     line-height: 1.6;
+    margin-top: 5px;
 }
 
 .articulo-nosotros ul{
+    font-size: var(--rspSize);
     line-height: 1.6;
 }
 
-.articulo-nosotros div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .articulo-nosotros img{
-    height: 400px;
-    width: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 600px;
+    max-height: 400px;
+    width: 100%;
+    margin: 20px 0px
 }

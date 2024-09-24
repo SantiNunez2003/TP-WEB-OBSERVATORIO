@@ -1,0 +1,19 @@
+@import url("../colores.css");
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+
+.titulo h1{
+    background-color: var(--azul-claro);
+    color: var(--semi-blanco);
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 15px 0px;
+    font-size: 200%;
+    letter-spacing: 3px;
+}

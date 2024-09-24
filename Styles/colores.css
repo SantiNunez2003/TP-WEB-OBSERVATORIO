@@ -1,8 +1,10 @@
 :root {
     --semi-blanco: #f0f0f0;
-    --grisaceo: #9babab;
+    --grisaceo: #bac2c2;
     --gris-azulado: #4a5c6a;
     --azulado-gris: #253745;
     --azul-oscuro: #11212d;
     --azul-claro: #044268;
+    --rspSize: clamp(12px,1.5vw,15px);
+    width: 100%;
 }
