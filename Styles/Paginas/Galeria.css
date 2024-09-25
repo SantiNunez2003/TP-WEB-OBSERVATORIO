@@ -1,40 +1,49 @@
 @import url("../colores.css");
 
-.contenedor-galeria{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#contenedor-imagenes{
-  width: 100%;
-  max-width: 1240px; 
+#contenedor-imagenes {
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 20px;
+  padding: 0px;
+  gap: 10px;
+
 }
-  
-#contenedor-imagenes figure{
+
+#contenedor-imagenes figure {
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
               -10px -10px 10px rgba(255, 255, 255, 0.5);
   transition: transform 0.3s ease;
-  width: 100%;
+  margin: 20px;
 }
 
-#contenedor-imagenes figure img{
-  width: auto; 
-  height: 300px;
+#contenedor-imagenes figure img {
+  width: 100%; 
+  max-height: 300px;
+  height: 85%;
   object-fit: fill;
-  max-width: 100%;
 }
 
-#contenedor-imagenes figure:hover{
+#contenedor-imagenes figure:hover {
   transform: scale(1.05);
 }
 
-#contenedor-imagenes figcaption{
+#contenedor-imagenes figcaption {
   font-weight: 600;
-  margin:10px;
+  margin: 10px;
+  font-size: var(--rspSize);
   text-align: start;
 }
+
+/* Media Queries para hacer el contenedor responsive */
+@media (max-width: 1200px) {
+  #contenedor-imagenes {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas medianas */
+  }
+}
+
+@media (max-width: 800px) {
+  #contenedor-imagenes {
+    grid-template-columns: 1fr; /* 1 columna para pantallas pequeñas */
+  }
+}
+

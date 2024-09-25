@@ -94,7 +94,7 @@
 
 /* RESPONSIVE NOTICIA*/
 
-@media (max-width: 740px) {
+@media (max-width: 600px) {
     .contenido-noticia{
         flex-direction: column;
         
