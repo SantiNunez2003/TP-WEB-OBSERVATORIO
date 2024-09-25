@@ -1,6 +1,6 @@
 @import url("../colores.css");
 
-header{
+.titulo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,6 +14,5 @@ header{
     width: 100%;
     margin: 0px;
     padding: 15px 0px;
-    font-size: 200%;
     letter-spacing: 3px;
 }

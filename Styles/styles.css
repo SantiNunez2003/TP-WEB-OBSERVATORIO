@@ -43,17 +43,18 @@ a:hover{
 /*ESTILO DE TITULO <h1>*/
 
 h1{
-    font-size: 250%;
+    font-size: clamp(150% , 3vw, 40px);
     color: var(--azul-claro);
     margin: 0px;
 }
 
 h2{
-    font-size: 175%;
+    font-size: clamp(100% , 1.5vw, 175%);
     color: var(--azul-claro);
 }
 
 h3{
+    font-size: clamp(90%, 1.5vw, 120%);
     color: var(--azul-claro);
 }
 
