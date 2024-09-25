@@ -10,6 +10,8 @@
 @import url('./Paginas/Evento-elegido.css');
 @import url('./Paginas/Galeria.css');
 
+
+
 body{
     font-family: Arial, sans-serif;  
     background-color: var(--semi-blanco); 
@@ -22,7 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center ;
-    
+    overflow-x: hidden;
 }
 
 /*--------------------CLASES GLOBALES------------------*/

@@ -4,7 +4,7 @@
         "titulo": "Título de la Noticia 1",
         "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "enlace": "./Noticia-seleccionada.html",
-        "imagen": "../Image/prueba-imagen.jfif"
+        "imagen": "../Image/Observatorio-Imagen.png"
       },
       {
         "titulo": "Título de la Noticia 2",
