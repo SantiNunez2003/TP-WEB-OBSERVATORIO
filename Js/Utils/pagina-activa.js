@@ -22,6 +22,9 @@ export function pagina_activa(){
 
     //Comparamos la ubicacion actual y segun sea su similitud se le asigna la clase active al <li>
     switch (ubicacionAtual) {
+      case '':
+          listaIndex.classList.add(estilo_activo);
+        break;
       case 'index.html':
           listaIndex.classList.add(estilo_activo);
         break;
