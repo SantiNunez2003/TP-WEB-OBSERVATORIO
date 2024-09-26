@@ -1,20 +1,31 @@
 export function pagina_activa(){
   try {
-    const listaIndex = document.getElementsByClassName("lista-index");
 
-    const ubicacionActual = window.location.pathname;
+    const ubicacionAtual = window.location.pathname.split('/').pop();
 
-    console.log(window.location.pathname);
+    const listaIndex = document.getElementById("lista-index");
+    const listaNoticia = document.getElementById("lista-noticia");
+    const listaGaleria = document.getElementById("lista-galeria");
+    const listaEvento = document.getElementById("lista-evento");
 
-    console.log(elementoNav.length)
-   
+    const estilo_activo = "active";
 
-    switch (ubicacionActual) {
-      case '/index.html':
-        listaIndex.classList.add("active")
-
+    console.log(ubicacionAtual)
+  
+      
+    switch (ubicacionAtual) {
+      case 'index.html':
+          listaIndex.classList.add(estilo_activo);
         break;
-
+      case 'Noticias.html':
+          listaNoticia.classList.add(estilo_activo);
+        break;
+      case 'Galeria.html':
+          listaGaleria.classList.add(estilo_activo);
+        break;
+      case 'Eventos.html':
+          listaEvento.classList.add(estilo_activo);
+        break;
       default:
         break;
     };

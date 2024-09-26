@@ -12,10 +12,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-self: center;
 }
-
 .noticia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     max-width: 800px;
     padding: 20px;
     margin: 20px;
