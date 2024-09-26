@@ -85,8 +85,10 @@
             <!-- Formulario de Inscripsión al Evento -->
             <form
               class="formulario"
+              id="formulario"
               action="../Evento-elegido-enviado.html"
               method="post"
+              onsubmit="return false;"
             >
               <!-- Nombre del Usuario -->
               <input
@@ -115,9 +117,7 @@
               />
 
               <!-- Boton de Envio -->
-              <a class="boton-registrarse" href="./Evento-elegido-enviado.html"
-                >Registrarse</a
-              >
+              <button class="boton-registrarse" type="submit">Registrarse</button>
             </form>
           </article>
         </section>
@@ -144,5 +144,6 @@
         </p>
       </div>
     </footer>
+    <script src="../Js/main.js" type="module"></script>
   </body>
 </html>
