@@ -1,7 +1,7 @@
 @import url("../colores.css");
 
 #contenedor-imagenes {
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   padding: 0px;

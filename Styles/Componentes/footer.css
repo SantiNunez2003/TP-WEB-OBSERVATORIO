@@ -1,27 +1,18 @@
 @import url('../colores.css');
 
-.footer {
-    width: 100%;
-    margin-top: 60px;
-    background-color: var(--azul-claro);
-    color: white;
-    text-align: center;
-}
-
-.footer-contenido {
+.footer-contenido{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.footer-info p, .footer-redes a {
+.footer-info p, .footer-redes a{
     font-size: 20px;
     margin: 10px 0;
 }
 
-.footer-info a, .footer-redes a {
-
+.footer-info a, .footer-redes a{
     color: white;
     text-decoration: none;
 }
