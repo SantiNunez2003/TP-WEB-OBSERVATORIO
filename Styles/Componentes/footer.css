@@ -7,9 +7,12 @@
     justify-content: space-between;
 }
 
-.footer-info p, .footer-redes a{
-    font-size: 20px;
+.footer-info p{
+    font-size: var(--rspSize);
     margin: 10px 0;
+}
+.footer-info a{
+    font-size: var(--rspSize);
 }
 
 .footer-info a, .footer-redes a{
