@@ -5,7 +5,8 @@
     align-content: center;
     justify-content: center;
     width: 100%;
-    padding: 20px 0px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     margin: 0px;
     background-color: var(--semi-blanco);
     position: sticky;
@@ -41,7 +42,7 @@
 }
 
 .lista-de-seleccion a{
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     font-weight: 600;
     font-size: clamp(14px, 1.5vw, 20px);
@@ -56,10 +57,5 @@
     width: 60%;
 }
 
-@media (max-width: 600px ) {
-    .barra-de-navegacion{
-        padding: 5px;
-    }
-    
-}
+
 

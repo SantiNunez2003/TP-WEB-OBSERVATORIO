@@ -16,3 +16,10 @@
     padding: 15px 0px;
     letter-spacing: 3px;
 }
+
+@media (max-width: 600px) {
+    .titulo h1{
+        letter-spacing: 0.5px;
+    }
+    
+}

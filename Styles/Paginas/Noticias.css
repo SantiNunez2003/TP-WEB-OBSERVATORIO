@@ -102,7 +102,6 @@
 @media (max-width: 600px) {
     .contenido-noticia{
         flex-direction: column;
-        
     }
 
     .texto-noticia{
