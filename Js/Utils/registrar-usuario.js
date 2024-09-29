@@ -1,6 +1,9 @@
-export async  function registrarUsuario(){
-
-    //Obtenemos los valores de los distintos inputs
+export function registrarUsuario(){
+    document.getElementById('formulario').addEventListener('submit', async  function(event) {
+        
+        event.preventDefault();  
+        
+        //Obtenemos los valores de los distintos inputs
     const nombre_usuario = document.getElementById("nombre").value;
     const email = document.getElementById("email").value;
     const telefono = document.getElementById("telefono").value;
@@ -33,5 +36,5 @@ export async  function registrarUsuario(){
     } catch (error) {
         console.error('Hubo un problema con la solicitud:', error);
     }
-    
+    });
 }

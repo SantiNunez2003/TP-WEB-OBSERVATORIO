@@ -4,16 +4,35 @@ import { componenteNoticia } from "./Controllers/noticia-controller.js";
 import { pagina_activa } from "./Utils/pagina-activa.js";
 import { registrarUsuario } from "./Utils/registrar-usuario.js";
 
-
-pagina_activa();
-componenteNoticia();
-comoponeteGaleria();
-componenteEvento();
-
-/* Tomamos el formulario por su id y escuchamos si ocurre el evento sumbit, si es asi se crea una 
-funcion que toma event como parametro para no recargar la pagina y luego llama a la uncion registrar usuario
+/*
+Para evitar problemas de ejecucion de las distintas funciones en paginas donde no se encuentran los componentes con lo que trabaja, 
+podemos tomar parte de la URL y mediante ello llamar a la funcion que nececita esa pagina para que sea dinamica.
 */
-document.getElementById('formulario').addEventListener('submit', function(event) {
-    event.preventDefault();  
-    registrarUsuario();  
-  });
+try {
+  pagina_activa();
+  //Tomamos la URL la separamos con sus '/' y tomamos el ultimo elemento
+  const ubicacionAtual = window.location.pathname.split('/').pop();
+
+  //Comparamos la ubicacion actual y segun sea su similitud se ejecuta la funcion
+  switch (ubicacionAtual) {
+    case 'Noticias.html':
+        componenteNoticia();
+      break;
+    case 'Galeria.html':
+        comoponeteGaleria();
+      break;
+    case 'Eventos.html': 
+        componenteEvento();
+      break;
+    case 'Evento-elegido.html': 
+        registrarUsuario();  
+      break;
+
+    default:
+      break;
+  };
+
+} catch (error) {
+  console.log('Error', error)
+}
+
