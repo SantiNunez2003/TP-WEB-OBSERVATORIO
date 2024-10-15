@@ -8,9 +8,8 @@
 @import url('./Paginas/Noticias.css');
 @import url('./Paginas/Eventos.css');
 @import url('./Paginas/Evento-elegido.css');
-@import url('./Paginas/Galeria.css');
-
-
+@import url('./Paginas/Galeria.css'); 
+@import url('./Componentes/paginacion.css');
 
 body{
     font-family: Arial, sans-serif;  
@@ -51,6 +50,7 @@ h1{
     font-size: clamp(150% , 3vw, 40px);
     color: var(--azul-claro);
     margin: 0px;
+    margin-top: 20px;
 }
 
 h2{

@@ -1,26 +1,27 @@
 @import url("../colores.css");
 
+
 #contenedor-imagenes {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  padding: 0px;
-  gap: 10px;
-
+  display: flex; 
+  flex-wrap: wrap; 
+  padding: 0;
 }
 
 #contenedor-imagenes figure {
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3),
               -10px -10px 10px rgba(255, 255, 255, 0.5);
   transition: transform 0.3s ease;
-  margin: 20px;
+  margin: 10px; 
+  width: calc(33.33% - 20px); /* Tres columnas */
+  display: inline-block; 
 }
 
 #contenedor-imagenes figure img {
   width: 100%; 
   max-height: 300px;
-  height: 85%;
-  object-fit: fill;
+  height: 100%; 
+  object-fit: cover; 
 }
 
 #contenedor-imagenes figure:hover {
@@ -36,14 +37,15 @@
 
 /* Media Queries para hacer el contenedor responsive */
 @media (max-width: 1200px) {
-  #contenedor-imagenes {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas medianas */
+  #contenedor-imagenes figure {
+    width: calc(50% - 20px); /* 2 columnas para pantallas medianas */
   }
 }
 
 @media (max-width: 800px) {
-  #contenedor-imagenes {
-    grid-template-columns: 1fr; /* 1 columna para pantallas pequeñas */
+  #contenedor-imagenes figure {
+    width: 100%; /* 1 columna para pantallas pequeñas */
   }
 }
+
 

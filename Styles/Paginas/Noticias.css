@@ -11,9 +11,11 @@
 #contenedor-noticias{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-self: center;
+    height: 100%;
 }
+
 .noticia{
     display: flex;
     flex-direction: column;

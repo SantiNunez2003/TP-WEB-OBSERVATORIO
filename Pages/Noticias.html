@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noticias | Observatorio de las Misiones</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Plugin JPages -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luis-almeida/jPages@latest/css/jPages.css">
+    <script src="https://cdn.jsdelivr.net/gh/luis-almeida/jPages@latest/js/jPages.min.js"></script>
+
+    <!-- Archivo JS -->
+    <script src="/Js/main.js" type="module"></script>
+
+    <!-- Hoja de Estilos -->
     <link rel="stylesheet" href="../Styles/styles.css" />
   </head>
 
@@ -81,82 +93,8 @@
 
           <!-- Presentación Dinamica de Notiacias -->
           <div id="contenedor-noticias"></div>
-          
-          <!-- Noticia Modelo 1 -->
-          <article class="noticia">
-            <!-- Titulo -->
-            <header class="titulo-noticia">
-              <img
-                src="../Icons/Blanco/Observatory-Icon.svg"
-                alt="Icono Observatorio"
-              />
-              <h2>Título de la Noticia</h2>
-            </header>
 
-            <!-- Descripción -->
-            <div class="contenido-noticia">
-              <!-- Texto de Descipción de la Noticia -->
-              <div class="texto-noticia">
-                <!-- Barra decorativa -->
-                <div class="barra-decorativa"></div>
-                <p class="descripcion-noticia">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  cumque iure quasi perferendis alias ducimus tempora? Odio,
-                  reprehenderit corrupti accusantium eos dolorem optio voluptas
-                  ut, qui, fugit laudantium consectetur quidem?
-                </p>
-
-                <!-- Boton para ver mas acerca de la Noticia -->
-                <a class="boton-mas-info" href="./Noticia-seleccionada.html">Ver Más...</a>
-              </div>
-
-              <!-- Imagen de la Noticia -->
-              <div class="contenedor-imagen-noticia">
-                <img
-                  src="../Image/prueba-imagen.jfif"
-                  alt="Imagen de la Noticia"
-                />
-              </div>
-            </div>
-          </article>
-
-          <!-- Noticia Modelo 2 -->
-          <article class="noticia">
-            <!-- Titulo -->
-            <header class="titulo-noticia">
-              <img
-                src="../Icons/Blanco/Observatory-Icon.svg"
-                alt="Icono de Observatorio"
-              />
-              <h2>Título de la Noticia</h2>
-            </header>
-
-            <!-- Descripción -->
-            <div class="contenido-noticia">
-              <!-- Imagen de la Noticia -->
-              <div class="contenedor-imagen-noticia">
-                <img
-                  src="../Image/prueba-imagen.jfif"
-                  alt="Imagen de la Noticia"
-                />
-              </div>
-
-              <!-- Texto de Descipción de la Noticia -->
-              <div class="texto-noticia">
-                <!-- Barra decorativa -->
-                <div class="barra-decorativa"></div>
-                <p class="descripcion-noticia">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                  cumque iure quasi perferendis alias ducimus tempora? Odio,
-                  reprehenderit corrupti accusantium eos dolorem optio voluptas
-                  ut, qui, fugit laudantium consectetur quidem?
-                </p>
-
-                <!-- Boton para ver mas acerca de la Noticia -->
-                <a class="boton-mas-info" href="./Noticia-seleccionada.html">Ver Más...</a>
-              </div>
-            </div>
-          </article>
+          <div class="holder"></div>
           
         </section>
       </section>
@@ -184,6 +122,6 @@
       </div>
     </footer>
 
-    <script src="/Js/main.js" type="module"></script>
+    
   </body>
 </html>

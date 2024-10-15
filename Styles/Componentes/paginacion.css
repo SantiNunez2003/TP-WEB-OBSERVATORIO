@@ -1,0 +1,28 @@
+@import url("../colores.css");
+
+.holder {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.holder a{
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: var(--azul-claro) ;
+    text-decoration: none;
+    margin: 0 5px;
+}
+  
+.holder a:hover{
+    background-color: var(--azul-claro);
+    color: var(--semi-blanco);
+    text-decoration: none;
+  }
+  
+.holder a.jp-current{
+    background-color: var(--azul-claro);
+    color: var(--semi-blanco);
+}
+  
