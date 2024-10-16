@@ -30,7 +30,7 @@ export async function componenteNoticia() {
     });
 
     $(document).ready(function(){
-      $("div.holder").jPages({
+      $("div.paginacion").jPages({
         containerID: "contenedor-noticias", 
         perPage: 4,                         
         startPage: 1,                       
@@ -40,12 +40,11 @@ export async function componenteNoticia() {
         previous: "Anterior",
         //Funcion para tomar la altura de los elementos y ajustar el componente                
         callback: function(items) {
-          // Ajustar la altura si lo deseas
           let elementosVisibles = items.visible.length;
           let alturaElemento = $("#contenedor-noticias .noticia:first").outerHeight(true); 
           let alturaTotal = elementosVisibles * alturaElemento;
           
-          // Ajustar la altura del contenedor de noticias dinámicamente
+          // Ajustamos la altura del contenedor de noticias dinámicamente
           $("#contenedor-noticias").css("height", alturaTotal + "px");
         }
       });
