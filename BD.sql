@@ -37,6 +37,53 @@ CREATE TABLE IF NOT EXISTS imagen_galeria (
 );
 
 /* ------------------------------------------------------------------------------- */
+-- TRIGGERS -- 
+/* Los siguiente triggers constan de que al momento de actualizar los elementos de las tablas a un estatus 0 "Inactivo", va a actualizar
+la fecha_alta con el dia y hora en la que se actualiza a "Inactivo" */
+
+DELIMITER //
+
+CREATE TRIGGER before_inactivo_noticia
+BEFORE UPDATE ON noticia
+FOR EACH ROW
+BEGIN
+    IF NEW.estatus = 0 THEN
+        SET NEW.fecha_alta = NOW();
+    END IF;
+END;
+
+//
+DELIMITER ;
+
+DELIMITER //
+
+CREATE TRIGGER before_inactivo_noticia
+BEFORE UPDATE ON evento
+FOR EACH ROW
+BEGIN
+    IF NEW.estatus = 0 THEN
+        SET NEW.fecha_alta = NOW();
+    END IF;
+END;
+
+//
+DELIMITER ;
+
+DELIMITER //
+
+CREATE TRIGGER before_inactivo_noticia
+BEFORE UPDATE ON imagen_galeria
+FOR EACH ROW
+BEGIN
+    IF NEW.estatus = 0 THEN
+        SET NEW.fecha_alta = NOW();
+    END IF;
+END;
+
+//
+DELIMITER ;
+
+/* ------------------------------------------------------------------------------- */
 
 CREATE VIEW noticias AS 
   SELECT 
