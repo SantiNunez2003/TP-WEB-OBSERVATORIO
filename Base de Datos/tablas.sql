@@ -1,7 +1,6 @@
 CREATE DATABASE IF NOT EXISTS observatorio;
 USE observatorio;
 
--- INIT database
 CREATE TABLE IF NOT EXISTS noticia (
   `id` TINYINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `url_imagen` VARCHAR(255),
