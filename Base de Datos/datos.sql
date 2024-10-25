@@ -1,3 +1,4 @@
+USE observatorio;
 -- Inserciones para la tabla noticia 
 INSERT INTO noticia (url_imagen, autor, titulo, descripcion, fecha_publicacion, estatus) VALUES
 ('../Image/prueba-imagen.jfif', 'Equipo del Observatorio', 
