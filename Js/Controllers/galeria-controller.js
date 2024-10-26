@@ -19,7 +19,7 @@ export async function comoponeteGaleria() {
 
     $(document).ready(function(){
       $("div.paginacion").jPages({
-        containerID: "contenedor-imagenes", 
+        containerID: "contenedor-imagenes",  // "contenedor-imagenes"
         perPage: 9,                         
         startPage: 1,                       
         startRange: 1,                      
