@@ -73,25 +73,25 @@
             <a href="../index.html"><img class="icono-seleccion" src="../Icons/Oscuro/Observatory-Icon-oscuro.svg"
                 alt="Icono de Observatorio" />
               Nosotros
-            </a>
+            </a><!-- ../index.html -->
           </li>
           <li id="lista-noticia">
-            <a href="./Noticias.html">
+            <a href="../Pages/Noticias.html">
               <img class="icono-seleccion" src="../Icons/Oscuro/Noticias-oscuro.svg" alt="Icono Noticia" />
               Noticias
-            </a>
+            </a> <!-- ../Noticias.html -->
           </li>
           <li id="lista-galeria">
-            <a href="./Galeria.html"><img class="icono-seleccion" src="../Icons/Oscuro/Telescopio-oscuro.svg"
+            <a href="./new-galeria"><img class="icono-seleccion" src="../Icons/Oscuro/Telescopio-oscuro.svg"
                 alt="Icono Telescopio" />
               Galeria
-            </a>
+            </a> <!-- ../Galeria.html -->
           </li>
           <li id="lista-evento">
-            <a href="./Eventos.html"><img class="icono-seleccion" src="../Icons/Oscuro/Eventos-oscuro.svg"
+            <a href="../Pages/Eventos.html"><img class="icono-seleccion" src="../Icons/Oscuro/Eventos-oscuro.svg"
                 alt="Icono Evento" />
               Eventos
-            </a>
+            </a><!-- ../Eventos.html -->
           </li>
         </ul>
       </nav>
