@@ -6,7 +6,7 @@ export async function comoponeteGaleria() {
     const res = await fetch("../Js/Data/galeria.json");
     const data = await res.json();
 
-    const constenedorGaleria = document.getElementById("");// contenerdor-imagenes
+    const constenedorGaleria = document.getElementById("contenedor-galeria");// contenerdor-imagenes
 
     data.imagen.forEach((imagen) => {
       const figure = document.createElement("figure");

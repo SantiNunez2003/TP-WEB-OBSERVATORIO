@@ -36,7 +36,7 @@
   <script src="https://cdn.jsdelivr.net/gh/luis-almeida/jPages@latest/js/jPages.min.js"></script>
 
   <!-- Archivo JS -->
-  <script src="/Js/main.js" type="module"></script>
+  <script src="../Js/main.js" type="module"></script>
 
   <!-- Hoja de Estilos -->
   <link rel="stylesheet" href="../Styles/styles.css" />
@@ -103,12 +103,10 @@
         <div id="contenedor-imagenes">
             <?php foreach ($imagenes as $imagen): ?>
                 <figure>
-                <img class="lazy" src="<?php echo htmlspecialchars($imagen['url_imganen']); ?>" alt="Descripción de la imagen" />
+                <img class="lazy" src="<?php echo htmlspecialchars($imagen['url_imagen']); ?>" alt="Descripción de la imagen" />
                 <figcaption><?php echo htmlspecialchars($imagen['descripcion']); ?></figcaption>
                 </figure>
             <?php endforeach; ?>
-
-            
         </div>
         
         <div class="paginacion"></div>
