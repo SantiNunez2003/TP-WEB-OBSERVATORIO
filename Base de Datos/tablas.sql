@@ -56,7 +56,7 @@ DELIMITER ;
 
 DELIMITER //
 
-CREATE TRIGGER before_inactivo_noticia
+CREATE TRIGGER before_inactivo_evento
 BEFORE UPDATE ON evento
 FOR EACH ROW
 BEGIN
@@ -70,7 +70,7 @@ DELIMITER ;
 
 DELIMITER //
 
-CREATE TRIGGER before_inactivo_noticia
+CREATE TRIGGER before_inactivo_img_galeria
 BEFORE UPDATE ON imagen_galeria
 FOR EACH ROW
 BEGIN
@@ -119,5 +119,3 @@ CREATE VIEW imagenes_galeria AS
   ORDER BY estatus ASC, fecha_creacion DESC;
  
 /* ------------------------------------------------------------------------------- */
-
-
