@@ -107,6 +107,8 @@
                 <figcaption><?php echo htmlspecialchars($imagen['descripcion']); ?></figcaption>
                 </figure>
             <?php endforeach; ?>
+
+            
         </div>
         
         <div class="paginacion"></div>
