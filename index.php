@@ -1,4 +1,6 @@
+<?php 
 
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -6,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nosotros | Observatorio de las Misiones</title>
     <link rel="stylesheet" href="./Styles/styles.css" />
+
+    
   </head>
 
   <body>
@@ -16,157 +20,21 @@
 
     <main>
       <?php 
-        include("php/components/hero.php");
-
-
+        // Componente Hero
+        include "php/components/hero.php";
+        // Componente Navbar
+        include "php/components/navbar.php";
       ?>
-      <!-- Imagen Hero
-      <section class="seleccion">
-        <article class="contenedor-seleccion">
-          <div>
-            <img
-              class="imagen-seleccion"
-              src="./Image/Observatorio-background-lines.svg"
-              alt="Imagen de Observatorio"
-            />
-          </div>
-        </article>
-      </section> -->
-
+      <!-- Contenedor Centrado de Contenidos -->
       <section class="contenedor-centrado">
-        <!-- Navegacion con Iconos -->
-        <nav class="barra-de-navegacion">
-          <ul class="lista-de-seleccion">
-            <li id="lista-index">
-              <a href="./index.html"
-                ><img
-                  class="icono-seleccion"
-                  src="./Icons/Oscuro/Observatory-Icon-oscuro.svg"
-                  alt="Icono de Observatorio"
-                />
-                Nosotros
-              </a>
-            </li>
-            <li id="lista-noticia">
-              <a href="./Pages/Noticias.html">
-                <img
-                  class="icono-seleccion"
-                  src="./Icons/Oscuro/Noticias-oscuro.svg"
-                  alt="Icono Noticia"
-                />
-                Noticias
-              </a>
-            </li>
-            <li id="lista-galeria">
-              <a href="./php/new-galeria.php"
-                ><img
-                  class="icono-seleccion"
-                  src="./Icons/Oscuro/Telescopio-oscuro.svg"
-                  alt="Icono Telescopio"
-                />
-                Galeria
-              </a>
-            </li>
-            <li id="lista-evento">
-              <a href="./Pages/Eventos.html"
-                ><img
-                  class="icono-seleccion"
-                  src="./Icons/Oscuro/Eventos-oscuro.svg"
-                  alt="Icono Evento"
-                />
-                Eventos
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <h1 class="titulo-nosotros" id="titulo-pagina">Nosotros</h1>
-
-        <!-- Sección Nosotros -->
-        <section class="nosotros">
-          <div class="nosotros-contenido">
-            <header>
-              <h2>Sobre el Observatorio</h2>
-            </header>
-
-            <article class="articulo-nosotros">
-              <h3 class="subtitulo-nosotros">Quiénes Somos</h3>
-              <p>
-                Somos un observatorio dedicado a la exploración y el estudio del
-                cosmos. Fundado en 1995, nuestro objetivo es proporcionar datos
-                precisos y accesibles sobre los fenómenos astronómicos,
-                colaborar en investigaciones científicas y fomentar la educación
-                en astronomía. Equipado con tecnología de punta y con un equipo
-                de expertos en diversas disciplinas, buscamos expandir los
-                límites del conocimiento y ofrecer a la comunidad un mayor
-                entendimiento del universo.
-              </p>
-              <div class="contenedor-centrado">
-                <img
-                  src="./Image/Observatorio-Imagen.png"
-                  alt="Imagen de Observatorio-1"
-                />
-              </div>
-            </article>
-
-            <article class="articulo-nosotros">
-              <h3>Nuestra Historia</h3>
-              <p>
-                El observatorio fue establecido en 1995 por un grupo de
-                entusiastas de la astronomía con la visión de crear un centro de
-                investigación de vanguardia. Desde sus inicios, hemos logrado
-                importantes avances en la observación de exoplanetas y
-                supernovas, y hemos desarrollado múltiples programas educativos
-                para estudiantes de todas las edades. A lo largo de los años,
-                hemos ampliado nuestras instalaciones y actualizado nuestros
-                equipos, consolidándonos como una referencia en el campo de la
-                astronomía a nivel nacional e internacional.
-              </p>
-              <div class="contenedor-centrado">
-                <img
-                  src="./Image/Observatorio-Imagen-2.webp"
-                  alt="imagen de Observatorio-2"
-                />
-              </div>
-            </article>
-
-            <article class="articulo-nosotros">
-              <h3>Nuestro Equipo</h3>
-              <ul>
-                <li>Dr. Ana Martínez - Directora</li>
-                <li>Dr. Carlos Fernández - Astrónomo Principal</li>
-                <li>Laura Gómez - Técnica de Instrumentación</li>
-                <li>Javier Ruiz - Coordinador de Proyectos</li>
-                <li>Elena Torres - Educadora y Divulgadora Científica</li>
-                <!-- Añadir más miembros según sea necesario -->
-              </ul>
-            </article>
-          </div>
-        </section>
+        <!-- Cargamos los contenidos -->
+        
       </section>
     </main>
-
-    <!--Footer-->
-    <footer class="footer">
-      <div class="footer-contenido">
-        <div class="footer-info">
-          <p>Teléfono: <a href="tel:+123456789">+123 456 789</a></p>
-          <p>
-            Email:
-            <a href="mailto:observatorio.misiones@gmail.com"
-              >observatorio.misiones@gmail.com</a
-            >
-          </p>
-        </div>
-        <!--Incluir Redes-->
-      </div>
-      <div class="footer-copy">
-        <p>
-          &copy; 2024 Observatorio de las Misiones. Todos los derechos
-          reservados.
-        </p>
-      </div>
-    </footer>
+    <?php 
+      // Componente Footer
+      include "php/components/footer.php";
+    ?>
     <script src="./Js/main.js" type="module"></script>
   </body>
 </html>
