@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -14,7 +15,12 @@
     </header>
 
     <main>
-      <!-- Imagen Hero -->
+      <?php 
+        include("php/components/hero.php");
+
+
+      ?>
+      <!-- Imagen Hero
       <section class="seleccion">
         <article class="contenedor-seleccion">
           <div>
@@ -25,7 +31,7 @@
             />
           </div>
         </article>
-      </section>
+      </section> -->
 
       <section class="contenedor-centrado">
         <!-- Navegacion con Iconos -->
