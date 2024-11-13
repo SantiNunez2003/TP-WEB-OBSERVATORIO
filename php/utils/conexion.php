@@ -1,27 +1,27 @@
 <?php
-function conectar()
-{
-	global $con;
-	$username = "root";
-	$password = "";
-	$db = "observatorio";
-	$host = "localhost";
+	function conectar()
+	{
+		global $con;
+		$username = "root";
+		$password = "";
+		$db = "observatorio";
+		$host = "localhost";
 
-	$con = mysqli_connect($host, $username, $password, $db);
-	/* comprobar la conexión */
-	if (mysqli_connect_errno()) {
-		printf("Falló la conexión: %s\n", mysqli_connect_error());
-		exit();
-	} else {
-		$con->set_charset("utf8");
-		$ret = true;
+		$con = mysqli_connect($host, $username, $password, $db);
+		/* comprobar la conexión */
+		if (mysqli_connect_errno()) {
+			printf("Falló la conexión: %s\n", mysqli_connect_error());
+			exit();
+		} else {
+			$con->set_charset("utf8");
+			$ret = true;
+		}
+
+		return $ret;
 	}
-
-	return $ret;
-}
-function desconectar()
-{
-	global $con;
-	mysqli_close($con);
-}
+	function desconectar()
+	{
+		global $con;
+		mysqli_close($con);
+	}
 ?>

@@ -33,9 +33,8 @@
       <?php 
         // Componente Hero
         include "php/components/hero.php";
-
         // Componente Navbar
-        include "php/components/navbar.php";
+        include("php/components/navbar.php");
       ?>
       <!-- Contenedor Centrado de Contenidos -->
       <section class="contenedor-centrado">
@@ -61,6 +60,8 @@
               header("Location: index.php$mods$params");
               exit();
           }
+         }else{
+          include "php/pages/nosotros.php";
          }
          ?>
         
