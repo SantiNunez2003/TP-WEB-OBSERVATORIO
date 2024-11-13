@@ -33,6 +33,9 @@
                                     echo '<td><button class="btn-detalle" 
                                             data-id="' . $noticia['id'] . '" 
                                             data-tabla="noticia">Ver Detalles</button></td>';
+                                    echo '<td><button class="btn-editar" 
+                                    data-id="' . $noticia['id'] . '" 
+                                    data-tabla="noticia">Editar</button></td>';
                                 echo '</tr>';
                             }
                         } else {

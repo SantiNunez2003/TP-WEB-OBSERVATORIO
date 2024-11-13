@@ -19,7 +19,6 @@
     color: var(--semi-blanco);
     width: 100%;
     max-width: 500px;
-    text-align: left;
 }
 
 /* Estilo del título del formulario */
@@ -61,13 +60,13 @@
 .boton-registrarse {
     background-color: var(--azul-oscuro);
     color: var(--semi-blanco);
-    padding: 12px 20px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
     transition: all 0.3s ease;
 }
 

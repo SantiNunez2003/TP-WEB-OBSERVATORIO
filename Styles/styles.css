@@ -46,6 +46,8 @@ main{
     flex: 1;
     padding: 1rem;
     display: flex;
+    align-items: start;
+    justify-content: space-around;
 }
 
 .sidebar ul {

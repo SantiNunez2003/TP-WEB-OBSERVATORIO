@@ -38,7 +38,6 @@
             <ul>
                 <nav>
                     <ul>
-                        <li><a href="dashboard.php">Inicio</a></li>
                         <li><a href="dashboard.php?modulo=noticiasAdm">Noticias</a></li>
                         <li><a href="dashboard.php?modulo=galeriaAdm">Galeria</a></li>
                         <li><a href="dashboard.php?modulo=eventosAdm">Eventos</a></li>  
@@ -54,7 +53,7 @@
                     if (isset($_GET["modulo"])) {
                         include "../components/$_GET[modulo].php";
                     } else {
-                        echo("<p>dashboard</p>");
+                        include "../components/noticiaAdm.php";
                     }
                 ?>
                  
