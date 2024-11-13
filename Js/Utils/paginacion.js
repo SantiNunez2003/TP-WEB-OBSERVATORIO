@@ -15,8 +15,8 @@ export function paginacionNoticia(){
 export function paginacionLista(){  
     $(document).ready(function(){
         $("div.paginacion").jPages({
-            containerID: "datos-tabla-noticias", 
-            perPage: 15,                         
+            containerID: "datos-lista", 
+            perPage: 10,                         
             startPage: 1,                       
             startRange: 1,                      
             midRange: 5,

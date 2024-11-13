@@ -29,36 +29,40 @@ try {
     $("#formulario").on("submit", function(event) {
         event.preventDefault(); 
         notificacionExito();
-        
+
         $(this)[0].reset();
-        
     });
     
     $(".btn-detalle").on("click", function () {
-      const dataId = $(this).data("id");
-      $.ajax({
-          url: `../components/modal.php`,
-          type: "GET",
-          data: { id: dataId },
-          success: function (data) {
-              // Inserta el contenido del modal y muestra el modal
-              $("#modal-wrapper").html(data);
-              $("#modal").show();
-  
-              // Asegúrate de que el botón de cerrar funcione después de la carga
-              $(".btn-cerrar").on("click", function () {
-                  $("#modal").hide();
-              });
-          }
-      });
-  });
-  
-  // Maneja el cierre del modal con escape, si se desea
-  $(document).keyup(function(e) {
-      if (e.key === "Escape") { // Si presionas ESC
-          $("#modal").hide();
-      }
-  });
+        const dataId = $(this).data("id");
+        const dataTabla = $(this).data("tabla");  // Obtener el valor de la tabla desde el botón
+        
+        $.ajax({
+            url: `../components/modal.php`, // URL donde se maneja el modal
+            type: "GET",
+            data: { id: dataId, tabla: dataTabla },  // Pasamos ambos parámetros: id y tabla
+            success: function (data) {
+                // Inserta el contenido del modal y muestra el modal
+                $("#modal-wrapper").html(data);
+                $("#modal").show();
+        
+                // Asegúrate de que el botón de cerrar funcione después de la carga
+                $(".btn-cerrar").on("click", function () {
+                    $("#modal").hide();
+                });
+            },
+            error: function () {
+                alert("Hubo un error al cargar los detalles. Intenta nuevamente.");
+            }
+        });
+    });
+    
+    // Maneja el cierre del modal con escape, si se desea
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") { // Si presionas ESC
+            $("#modal").hide();
+        }
+    });
     
   });
 

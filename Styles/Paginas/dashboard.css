@@ -10,32 +10,32 @@
 }
 
 /* Estilo principal de la tabla */
-#tabla-noticias{
+#tabla-datos{
     border-collapse: collapse;
     width: 100%;
     border: 0px ; 
 }
 
 /* Estilo para las celdas de la tabla */
-#tabla-noticias th, #tabla-noticias td {
+#tabla-datos th, #tabla-datos td {
     padding: 5px; /* Espaciado dentro de las celdas */
     text-align: left; /* Alineación del texto en las celdas */
     border-bottom: 1px solid #ddd; /* Línea de separación entre filas */
 }
 
 /* Estilo para las cabeceras de la tabla */
-#tabla-noticias th {
+#tabla-datos th {
     background-color: #f4f4f4; /* Fondo claro para los encabezados */
     font-weight: bold;
 }
 
 /* Estilo para las filas de datos */
-#tabla-noticias td {
+#tabla-datos td {
     background-color: #fff;
 }
 
 /* Estilo para el botón dentro de la tabla */
-#tabla-noticias .btn-detalle {
+#tabla-datos .btn-detalle {
     padding: 6px 12px;
     background-color: #007bff;
     color: white;
@@ -44,12 +44,12 @@
     cursor: pointer;
 }
 
-#tabla-noticias .btn-detalle:hover {
+#tabla-datos .btn-detalle:hover {
     background-color: #0056b3;
 }
 
 /* Estilo opcional para las filas al pasar el mouse */
-#tabla-noticias tr:hover {
+#tabla-datos tr:hover {
     background-color: #f9f9f9; /* Cambia el fondo al pasar el mouse */
 }
 

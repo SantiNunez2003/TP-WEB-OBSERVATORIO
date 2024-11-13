@@ -10,7 +10,7 @@
             </select>
         </div>
         <div>
-            <table id="tabla-noticias">
+            <table id="tabla-datos">
                 <thead>
                     <tr>
                         <th>Título</th>
@@ -19,7 +19,7 @@
                         <th>Acción</th>
                     </tr>
                 </thead>
-                <tbody id="datos-tabla-noticias">
+                <tbody id="datos-lista">
                     <?php
                         $sql = "SELECT * FROM noticia ORDER BY fecha_publicacion DESC";
                         $result = mysqli_query($con, $sql);   
@@ -30,7 +30,9 @@
                                     echo '<td><strong>' . $noticia['titulo'] . '</strong></td>';
                                     echo '<td>' . $noticia['autor'] . '</td>';
                                     echo '<td>' . $noticia['fecha_publicacion'] . '</td>';
-                                    echo '<td><button class="btn-detalle" data-id="' . $noticia['id'] . '">Ver Detalles</button></td>';
+                                    echo '<td><button class="btn-detalle" 
+                                            data-id="' . $noticia['id'] . '" 
+                                            data-tabla="noticia">Ver Detalles</button></td>';
                                 echo '</tr>';
                             }
                         } else {

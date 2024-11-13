@@ -2,7 +2,7 @@
     // Procesar el formulario dependiendo de la acción seleccionada
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        // Verifica qué formulario se ha enviado
+        // Verifica qué formulario se ha e  nviado
         if (isset($_POST['accion'])) {
 
             // Formulario de noticia
@@ -17,10 +17,7 @@
                         VALUES ('$titulo', '$descripcion', '$autor', '$url_imagen', '$fecha_publicacion')";
                 
                 if (mysqli_query($con, $sql)) {
-                    echo "<script 
-                            src='Js/main.js'> notificiacionExito() 
-                            window.location.href = window.location.href;
-                        </script>";
+            
                 } else {
                     echo "Error: " . mysqli_error($con);
                 }
@@ -73,7 +70,7 @@ function mostrarFormulario($modulo) {
     if ($modulo == 'noticiasAdm') {
         echo '
             <h2 class="titulo-formulario">Administrar Noticia</h2>
-            <form id="formulario"  method="POST" action="dashboard.php?modulo=noticiasAdm" class="formulario-evento">
+            <form method="POST" action="dashboard.php?modulo=noticiasAdm" class="formulario-evento">
                 <label for="titulo" class="label-formulario">Título:</label>
                 <input type="text" id="titulo" name="titulo" class="input-formulario" required>
                 
