@@ -3,7 +3,7 @@
 	{
 		global $con;
 		$username = "root";
-		$password = "";
+		$password = "root";
 		$db = "observatorio";
 		$host = "localhost";
 
