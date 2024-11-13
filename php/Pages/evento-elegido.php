@@ -20,6 +20,7 @@
     }
  
     function agregarParticipante(){
+      global $con;
          // Verifica que el formulario haya sido enviado
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Obtiene y limpia los datos del formulario

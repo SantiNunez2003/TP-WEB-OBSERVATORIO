@@ -22,6 +22,7 @@ export function paginacionLista(){
             midRange: 5,
             next: "Siguiente",
             previous: "Anterior",
+            noCss: true,
             callback: function() {
                 // Restablecer el display del tbody después de la paginación
                 $("#datos-tabla-noticias tr").css("display", "none");

@@ -2,13 +2,6 @@
     <!-- Sección de eventos -->
     <div class="lista">
         <h2>Lista de Eventos</h2>
-        <div class="filtro">
-            <label for="filtro">Filtrar por Estatus:</label>
-            <select id="filtro">
-                <option value="1">Activos</option>
-                <option value="0">Inactivos</option>
-            </select>
-        </div>
         <div>
             <table id="tabla-datos">
                 <thead>

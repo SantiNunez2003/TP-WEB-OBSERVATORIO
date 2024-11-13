@@ -2,13 +2,6 @@
     <!-- Sección de galería -->
     <div class="lista">
         <h2>Galería de Imágenes</h2>
-        <div class="filtro">
-            <label for="filtro">Filtrar por Estatus:</label>
-            <select id="filtro">
-                <option value="1">Activas</option>
-                <option value="0">Inactivas</option>
-            </select>
-        </div>
         <div>
             <table id="tabla-datos">
                 <thead>
