@@ -3,7 +3,6 @@
 .evento-elegido{
     width: 50%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) ,

@@ -31,7 +31,7 @@
         </a>
     </li>
     <li>
-        <a href=".index.php?modulo=eventos"
+        <a href="index.php?modulo=eventos"
         ><img
             class="icono-seleccion"
             src="./Icons/Oscuro/Eventos-oscuro.svg"
