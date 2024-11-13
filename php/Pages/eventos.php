@@ -63,7 +63,7 @@
                         <p><?php echo $evento['descripcion']; ?></p>
                       </td>
                       <td class="boton-evento">
-                        <a class="boton-mas-info" href="evento-elegido.php?id=<?php echo $evento['id']; ?>">GRATIS</a>
+                        <a class="boton-mas-info" href="index.php?modulo=evento-elegido&id=<?php echo $evento['id']; ?>">GRATIS</a>
                       </td>
                     </tr>
                     <?php

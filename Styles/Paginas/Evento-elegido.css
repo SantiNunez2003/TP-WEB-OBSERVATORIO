@@ -1,23 +1,25 @@
 @import url('../colores.css');
 
 .evento-elegido{
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) ,
                 -10px -10px 10px rgba(255, 255, 255, 0.3) ;
-    padding: 30px;
-    margin-top: 40px;
+    padding: 50px;
 }
 
 .evento-datos h1{
     margin: 20px 0px;
 }
 
-.evento-elegido img{
-    width: 100%;
-    object-fit: cover;
+.evento-elegido img{ 
+    min-width: 900px;
+    max-height: 550px;
+    min-height: 450px;
+    width: fit-content;
+    object-fit: fill;
 }
 
 .evento-datos p{
@@ -25,7 +27,7 @@
 }
 
 .formulario-evento{
-    margin: 30px;
+    margin-left: 30px;
     max-width: 400px;
     width: 100%;
     background-color: var(--azul-claro);
@@ -34,6 +36,10 @@
     text-align: center;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) inset,
     -10px -10px 10px rgba(255, 255, 255, 0.3) ;
+}
+
+.formulario-evento h2{
+    color: var(--semi-blanco);
 }
 
 .formulario-evento p{
@@ -48,8 +54,8 @@
 }
 
 .formulario input{
-    max-width: 300px;
-    width: 100%;
+    min-width: 80%;
+    max-width: 100%;
     padding: 5px;
     margin: 30px;
 }
@@ -77,6 +83,19 @@
 @media (max-width: 700px) {
     .evento-elegido{
         width: 75%;
+    }
+
+    .formulario input{
+        max-width: 150px;
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .evento-elegido{
+        width: 75%;
+        flex-direction: column;
     }
 
     .formulario input{

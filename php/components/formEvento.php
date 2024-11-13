@@ -22,7 +22,7 @@
 
 <article class="formulario-evento">
   <h2>Registrarse en el Evento</h2>
-  <p>Rellena este formulario para ingresar GRATIS!!</p>
+  <p>Registra tu asistencia</p>
   <!-- Formulario de Inscripción al Evento -->
   <form
     class="formulario"
