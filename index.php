@@ -33,6 +33,7 @@
       <?php 
         // Componente Hero
         include "php/components/hero.php";
+
         // Componente Navbar
         include "php/components/navbar.php";
       ?>

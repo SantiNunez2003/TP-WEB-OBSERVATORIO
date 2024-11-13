@@ -3,7 +3,7 @@ function conectar()
 {
 	global $con;
 	$username = "root";
-	$password = "root";
+	$password = "";
 	$db = "observatorio";
 	$host = "localhost";
 
