@@ -29,27 +29,6 @@ export async function componenteNoticia() {
       contenedorNoticias.appendChild(article);
     });
 
-    $(document).ready(function(){
-      $("div.paginacion").jPages({
-        containerID: "contenedor-noticias", 
-        perPage: 4,                         
-        startPage: 1,                       
-        startRange: 1,                      
-        midRange: 5,
-        next: "Siguiente",
-        previous: "Anterior",
-        //Funcion para tomar la altura de los elementos y ajustar el componente                
-        callback: function(items) {
-          let elementosVisibles = items.visible.length;
-          let alturaElemento = $("#contenedor-noticias .noticia:first").outerHeight(true); 
-          let alturaTotal = elementosVisibles * alturaElemento;
-          
-          // Ajustamos la altura del contenedor de noticias dinámicamente
-          $("#contenedor-noticias").css("height", alturaTotal + "px");
-        }
-      });
-    });
-
   } catch (error) {
     console.error("Error:", error);
   }

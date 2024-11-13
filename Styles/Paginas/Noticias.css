@@ -22,6 +22,7 @@
     justify-content: center;
     align-self: center;
     max-width: 800px;
+    width: 100%;
     padding: 20px;
     margin: 20px;
     background-color: var(--semi-blanco);
@@ -43,16 +44,14 @@
 .titulo-noticia img{
     max-width: 30px;
     width: auto;
-    padding: 0px 20px;
+    padding: 15px;
 }
 
 .contenido-noticia{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 10px;
     width: 100%;
-    object-fit: fill;
 }
 
 .texto-noticia{

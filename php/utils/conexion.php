@@ -2,10 +2,10 @@
 function conectar()
 {
 	global $con;
-	$username = "";
-	$password = "";
-	$db = "";
-	$host = "";
+	$username = "root";
+	$password = "root";
+	$db = "observatorio";
+	$host = "localhost";
 
 	$con = mysqli_connect($host, $username, $password, $db);
 	/* comprobar la conexión */

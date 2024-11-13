@@ -25,6 +25,19 @@ CREATE TABLE IF NOT EXISTS evento (
   `estatus` TINYINT(1)
 );
 
+CREATE TABLE IF NOT EXISTS participante_evento(
+  `id` TINYINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `evento_id` TINYINT NOT NULL,
+  `nombre` VARCHAR(100) NOT NULL,
+  `apellido` VARCHAR(100) NOT NULL,
+  `telefono` VARCHAR(100) NOT NULL,
+  `gmail` VARCHAR(255) NOT NULL,
+  `asistencia` BOOLEAN NOT NULL DEFAULT 0,
+  `fecha_alta` DATETIME DEFAULT NOW(),
+  `estatus` TINYINT(1),
+  FOREIGN KEY (`evento_id`) REFERENCES evento(`id`)
+);
+
 CREATE TABLE IF NOT EXISTS imagen_galeria (
   `id` TINYINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `url_imagen` VARCHAR(255),
@@ -58,6 +71,20 @@ DELIMITER //
 
 CREATE TRIGGER before_inactivo_evento
 BEFORE UPDATE ON evento
+FOR EACH ROW
+BEGIN
+    IF NEW.estatus = 0 THEN
+        SET NEW.fecha_alta = NOW();
+    END IF;
+END;
+
+//
+DELIMITER ;
+
+DELIMITER //
+
+CREATE TRIGGER before_participante_inactivo
+BEFORE UPDATE ON participante_evento
 FOR EACH ROW
 BEGIN
     IF NEW.estatus = 0 THEN

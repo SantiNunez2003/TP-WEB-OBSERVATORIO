@@ -1,3 +1,7 @@
+<?php 
+    $titulo_modulo = "Nosotros | Observatorio de las Misiones"
+?>
+
 <!-- Navegacion con Iconos -->
 <h1 class="titulo-nosotros" id="titulo-pagina">Nosotros</h1>
         
