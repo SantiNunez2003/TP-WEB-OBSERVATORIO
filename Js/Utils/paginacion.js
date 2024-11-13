@@ -12,6 +12,24 @@ export function paginacionNoticia(){
     });
 };
 
+export function paginacionLista(){  
+    $(document).ready(function(){
+        $("div.paginacion").jPages({
+            containerID: "datos-tabla-noticias", 
+            perPage: 15,                         
+            startPage: 1,                       
+            startRange: 1,                      
+            midRange: 5,
+            next: "Siguiente",
+            previous: "Anterior",
+            callback: function() {
+                // Restablecer el display del tbody después de la paginación
+                $("#datos-tabla-noticias tr").css("display", "none");
+            }
+        }); 
+    });
+};
+
 export function paginacionGaleria(){
     $(document).ready(function(){
         $("div.paginacion").jPages({

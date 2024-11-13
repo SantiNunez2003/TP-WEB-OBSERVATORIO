@@ -51,53 +51,53 @@
         <p><?php echo nl2br($evento['descripcion']); ?></p>
     </article>
     <article class="formulario-evento">
-  <h2>Registrarse en el Evento</h2>
-  <p>Registra tu asistencia</p>
-  <!-- Formulario de Inscripción al Evento -->
-  <form
-    class="formulario"
-    id="formulario"
-    action="<?php agregarParticipante()?>"
-    method="post"
-  >
-    <!-- Nombre del Usuario -->
-    <input
-      placeholder="Nombre Completo"
-      type="text"
-      id="nombre"
-      name="nombre"
-      required
-    />
+      <h2>Registrarse en el Evento</h2>
+      <p>Registra tu asistencia</p>
+      <!-- Formulario de Inscripción al Evento -->
+      <form
+        class="formulario"
+        id="formulario"
+        action="<?php agregarParticipante()?>"
+        method="post"
+      >
+        <!-- Nombre del Usuario -->
+        <input
+          placeholder="Nombre Completo"
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+        />
 
-    <!-- Apellido del Usuario -->
-    <input
-      placeholder="Apellido"
-      type="text"
-      id="apellido"
-      name="apellido"
-      required
-    />
+        <!-- Apellido del Usuario -->
+        <input
+          placeholder="Apellido"
+          type="text"
+          id="apellido"
+          name="apellido"
+          required
+        />
 
-    <!-- Correo del Usuario -->
-    <input
-      placeholder="Correo Electrónico"
-      type="email"
-      id="email"
-      name="email"
-      required
-    />
+        <!-- Correo del Usuario -->
+        <input
+          placeholder="Correo Electrónico"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
 
-    <!-- Teléfono del Usuario -->
-    <input
-      placeholder="Número de Teléfono"
-      type="tel"
-      id="telefono"
-      name="telefono"
-      required
-    />
+        <!-- Teléfono del Usuario -->
+        <input
+          placeholder="Número de Teléfono"
+          type="tel"
+          id="telefono"
+          name="telefono"
+          required
+        />
 
-    <!-- Botón de Envío -->
-    <button class="boton-registrarse" type="submit">Registrarse</button>
-  </form>
-</article>
+        <!-- Botón de Envío -->
+        <button class="boton-registrarse" type="submit">Registrarse</button>
+      </form>
+    </article>
 </section>

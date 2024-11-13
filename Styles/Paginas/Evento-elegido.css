@@ -1,106 +1,157 @@
+/* Importación de colores globales */
 @import url('../colores.css');
 
-.evento-elegido{
-    width: 70%;
+/* Estilo para el contenedor general del formulario */
+.formulario-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) ,
-                -10px -10px 10px rgba(255, 255, 255, 0.3) ;
-    padding: 50px;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.evento-datos h1{
-    margin: 20px 0px;
+/* Estilo del formulario principal */
+.formulario-evento {
+    background-color: var(--azul-claro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 -4px 12px rgba(255, 255, 255, 0.15);
+    color: var(--semi-blanco);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
 }
 
-.evento-elegido img{ 
-    min-width: 900px;
-    max-height: 550px;
-    min-height: 450px;
-    width: fit-content;
-    object-fit: fill;
+/* Estilo del título del formulario */
+.formulario-evento h2 {
+    color: var(--semi-blanco);
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
-.evento-datos p{
-    font-size: var(--rspSize);
+/* Estilo de las etiquetas dentro del formulario */
+.formulario-evento label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: var(--semi-blanco);
 }
 
-.formulario-evento{
-    margin-left: 30px;
+/* Estilo de los campos de entrada */
+.formulario-evento input,
+.formulario-evento textarea {
     max-width: 400px;
     width: 100%;
-    background-color: var(--azul-claro);
     padding: 10px;
-    color: var(--semi-blanco);
-    text-align: center;
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.304) inset,
-    -10px -10px 10px rgba(255, 255, 255, 0.3) ;
-}
-
-.formulario-evento h2{
-    color: var(--semi-blanco);
-}
-
-.formulario-evento p{
-    font-size: var(--rspSize);
-}
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.formulario input{
-    min-width: 80%;
-    max-width: 100%;
-    padding: 5px;
-    margin: 30px;
-}
-
-.boton-registrarse{
-    background-color: var(--azul-oscuro);
-    color: var(--semi-blanco);
-    padding: 10px 20px;
     margin-bottom: 15px;
-    border: none;
+    font-size: 16px;
     border-radius: 5px;
-    font-size: 15px;
-    font-weight: 400;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block; 
-}
-
-.boton-registrarse:hover{
     background-color: var(--semi-blanco);
     color: var(--azul-oscuro);
-    font-weight: 400;
 }
 
+/* Cambiar el borde de los campos de entrada cuando están en foco */
+.formulario-evento input:focus,
+.formulario-evento textarea:focus {
+    border-color: var(--azul-oscuro);
+    outline: none;
+}
+
+/* Estilo del botón */
+.boton-registrarse {
+    background-color: var(--azul-oscuro);
+    color: var(--semi-blanco);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+.boton-registrarse:hover {
+    background-color: var(--semi-blanco);
+    color: var(--azul-oscuro);
+    font-weight: 700;
+}
+
+/* Estilo para el contenedor de los datos del evento */
+.evento-elegido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: var(--semi-blanco);
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.evento-elegido img {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.evento-datos h1 {
+    font-size: 28px;
+    margin: 20px 0;
+    color: var(--azul-oscuro);
+}
+
+.evento-datos p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--azul-oscuro);
+}
+
+/* Estilo del formulario de evento en modo columna (móviles) */
 @media (max-width: 700px) {
-    .evento-elegido{
-        width: 75%;
+    .formulario-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .formulario input{
-        max-width: 150px;
-        width: 100%;
-        margin: 10px;
+    .formulario-evento {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .evento-elegido {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        max-width: 300px;
+        margin: 10px 0;
     }
 }
 
+/* Estilo para pantallas medianas (tablet y móviles) */
 @media (max-width: 900px) {
-    .evento-elegido{
-        width: 75%;
+    .evento-elegido {
+        max-width: 90%;
         flex-direction: column;
     }
 
-    .formulario input{
-        max-width: 150px;
-        width: 100%;
-        margin: 10px;
+    .formulario-evento {
+        max-width: 100%;
+    }
+
+    .evento-elegido img {
+        max-width: 100%;
+        min-height: 300px;
     }
 }

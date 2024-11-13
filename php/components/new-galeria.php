@@ -76,7 +76,7 @@
             </a><!-- ../index.html -->
           </li>
           <li id="lista-noticia">
-            <a href="../Pages/Noticias.html">
+            <a href="../pages/Noticias.html">
               <img class="icono-seleccion" src="../Icons/Oscuro/Noticias-oscuro.svg" alt="Icono Noticia" />
               Noticias
             </a> <!-- ../Noticias.html -->
@@ -88,7 +88,7 @@
             </a> <!-- ../Galeria.html -->
           </li>
           <li id="lista-evento">
-            <a href="../Pages/Eventos.html"><img class="icono-seleccion" src="../Icons/Oscuro/Eventos-oscuro.svg"
+            <a href="../pages/Eventos.html"><img class="icono-seleccion" src="../Icons/Oscuro/Eventos-oscuro.svg"
                 alt="Icono Evento" />
               Eventos
             </a><!-- ../Eventos.html -->

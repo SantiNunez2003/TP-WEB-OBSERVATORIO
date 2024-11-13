@@ -1,9 +1,10 @@
 import { componenteEvento } from "./Controllers/evento-controller.js";
 import { comoponeteGaleria } from "./Controllers/galeria-controller.js";
 import { componenteNoticia } from "./Controllers/noticia-controller.js";
+import { abrirModal, cerrarModal } from "./Utils/modal.js";
 import { notificacionExito } from "./Utils/notificaciones.js";
 import { pagina_activa } from "./Utils/pagina-activa.js";
-import { paginacionEventos, paginacionGaleria, paginacionNoticia } from "./Utils/paginacion.js";
+import { paginacionEventos, paginacionGaleria, paginacionLista, paginacionNoticia } from "./Utils/paginacion.js";
 import { registrarUsuario } from "./Utils/registrar-usuario.js";
 
 
@@ -17,17 +18,12 @@ const ubicacionAtual = window.location.pathname.split('/').pop();
 
 try {
   pagina_activa();
-  
-  switch (ubicacionAtual) {
-    case 'index.php':
-        paginacionNoticia();
-        paginacionGaleria();
-        paginacionEventos();
-      break;
 
-    default:
-      break;
-  };
+  paginacionNoticia();
+  paginacionGaleria();
+  paginacionEventos();
+  paginacionLista();
+
 
   $(document).ready(function() {
     $("#formulario").on("submit", function(event) {
@@ -35,9 +31,36 @@ try {
         notificacionExito();
         
         $(this)[0].reset();
+        
     });
-});
-
+    
+    $(".btn-detalle").on("click", function () {
+      const dataId = $(this).data("id");
+      $.ajax({
+          url: `../components/modal.php`,
+          type: "GET",
+          data: { id: dataId },
+          success: function (data) {
+              // Inserta el contenido del modal y muestra el modal
+              $("#modal-wrapper").html(data);
+              $("#modal").show();
+  
+              // Asegúrate de que el botón de cerrar funcione después de la carga
+              $(".btn-cerrar").on("click", function () {
+                  $("#modal").hide();
+              });
+          }
+      });
+  });
+  
+  // Maneja el cierre del modal con escape, si se desea
+  $(document).keyup(function(e) {
+      if (e.key === "Escape") { // Si presionas ESC
+          $("#modal").hide();
+      }
+  });
+    
+  });
 
 } catch (error) {
   console.log('Error', error)

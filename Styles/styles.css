@@ -10,6 +10,8 @@
 @import url('./Paginas/Evento-elegido.css');
 @import url('./Paginas/Galeria.css'); 
 @import url('./Componentes/paginacion.css');
+@import url('./Paginas/dashboard.css');
+@import url('./Componentes/modal.css');
 
 body{
     font-family: Arial, sans-serif;  
@@ -30,7 +32,7 @@ main{
 /*--------------------CLASES GLOBALES------------------*/
 .container {
     display: flex;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100%- 60px);
 }
 
 .sidebar {
@@ -39,10 +41,13 @@ main{
     background-color: var(--azul-claro);
     padding: 1rem;
 }
+
 .content{
     flex: 1;
     padding: 1rem;
+    display: flex;
 }
+
 .sidebar ul {
     list-style-type: none;
     padding: 0;
