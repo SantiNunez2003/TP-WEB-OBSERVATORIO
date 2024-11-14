@@ -26,9 +26,8 @@ try {
 
     // Verifica si la variable `registroExitoso` está definida y es true
     if (typeof registroExitoso !== 'undefined' && registroExitoso === true) {
-        event.preventDefault(); 
-        notificacionExito();
-    }
+     notificacionExito();
+   }
 
     /*
         $("#formulario").on("submit", function(event) {

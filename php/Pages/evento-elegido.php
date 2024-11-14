@@ -28,8 +28,8 @@
   
           if (mysqli_query($con, $sql)) {
            // En caso de exito llamar a la funcion en js notificacionExito
-           echo "<script type='text/javascript'>
-                   window.registroExitoso = true;
+          echo "<script type='text/javascript'>
+                  window.registroExitoso = true;
                  </script>";
           } else {
             echo "<p>Error: " . mysqli_error($con) . "</p>";
