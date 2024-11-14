@@ -13,26 +13,56 @@ Para evitar problemas de ejecucion de las distintas funciones en paginas donde n
 podemos tomar parte de la URL y mediante ello llamar a la funcion que nececita esa pagina para que sea dinamica.
 */
 
-//Tomamos la URL la separamos con sus '/' y tomamos el ultimo elemento
-const ubicacionAtual = window.location.pathname.split('/').pop();
 
 try {
-  pagina_activa();
+    pagina_activa();
 
-  paginacionNoticia();
-  paginacionGaleria();
-  paginacionEventos();
-  paginacionLista();
-
+    paginacionNoticia();
+    paginacionGaleria();
+    paginacionEventos();
+    paginacionLista();
 
   $(document).ready(function() {
-    $("#formulario").on("submit", function(event) {
+
+    // Verifica si la variable `registroExitoso` está definida y es true
+    if (typeof registroExitoso !== 'undefined' && registroExitoso === true) {
         event.preventDefault(); 
         notificacionExito();
+    }
 
-        $(this)[0].reset();
-    });
-
+    /*
+        $("#formulario").on("submit", function(event) {
+            event.preventDefault(); // Evita el envío predeterminado del formulario
+        
+            // Recoge los datos del formulario
+            var formData = {
+                nombre: $("#nombre").val(),
+                apellido: $("#apellido").val(),
+                email: $("#email").val(),
+                telefono: $("#telefono").val(),
+                evento_id: 1 // Cambia el ID del evento correspondiente
+            };
+        
+            // Envía los datos mediante AJAX
+            $.ajax({
+                url: 'php/pages/evento-elegido.php', // Asegúrate de usar la ruta correcta
+                type: 'POST',
+                data: formData,
+                dataType: 'json', // Espera una respuesta en JSON
+                success: function(response) {
+                    if (response.success) {
+                         // Llama a la función para mostrar notificación de éxito
+                        $("#formulario")[0].reset(); // Resetea el formulario
+                    } else {
+                        alert(response.message); // Muestra el mensaje de error si no fue exitoso
+                    }
+                },
+                error: function() {
+                    alert("Hubo un problema con la solicitud. Inténtalo de nuevo.");
+                }
+            });
+        });
+*/
         $(".btn-editar").on("click", function () {
             const dataId = $(this).data("id");
             const dataTabla = $(this).data("tabla");  // Obtener el valor de la tabla desde el botón

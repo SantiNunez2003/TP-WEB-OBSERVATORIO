@@ -1,5 +1,4 @@
 <?php
-    $registroExitoso = false;
     // Asegúrate de que el ID esté presente en la URL
     if (isset($_GET['id'])) {
 
@@ -14,32 +13,32 @@
             echo "evento no encontrada.";
             exit;
         }
+        
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+          // Obtiene y limpia los datos del formulario
+          $nombre = mysqli_real_escape_string($con, $_POST['nombre']);
+          $apellido = mysqli_real_escape_string($con, $_POST['apellido']);
+          $email = mysqli_real_escape_string($con, $_POST['email']);
+          $telefono = mysqli_real_escape_string($con, $_POST['telefono']);
+          $evento_id = mysqli_real_escape_string($con, $id_evento);; // Cambia este valor según el ID del evento correspondiente
+  
+          // Inserta los datos en la tabla `participante_evento`
+          $sql = "INSERT INTO participante_evento (evento_id, nombre, apellido, telefono, gmail, asistencia)
+                  VALUES ('$evento_id', '$nombre', '$apellido', '$telefono', '$email', 0)";
+  
+          if (mysqli_query($con, $sql)) {
+           // En caso de exito llamar a la funcion en js notificacionExito
+           echo "<script type='text/javascript'>
+                   window.registroExitoso = true;
+                 </script>";
+          } else {
+            echo "<p>Error: " . mysqli_error($con) . "</p>";
+           
+          }
+        }
     } else {
         echo "ID de evento no proporcionado.";
         exit;
-    }
- 
-    function agregarParticipante(){
-      global $con;
-         // Verifica que el formulario haya sido enviado
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Obtiene y limpia los datos del formulario
-        $nombre = mysqli_real_escape_string($con, $_POST['nombre']);
-        $apellido = mysqli_real_escape_string($con, $_POST['apellido']);
-        $email = mysqli_real_escape_string($con, $_POST['email']);
-        $telefono = mysqli_real_escape_string($con, $_POST['telefono']);
-        $evento_id = 1; // Cambia este valor según el ID del evento correspondiente
-
-        // Inserta los datos en la tabla `participante_evento`
-        $sql = "INSERT INTO participante_evento (evento_id, nombre, apellido, telefono, gmail, asistencia)
-                VALUES ('$evento_id', '$nombre', '$apellido', '$telefono', '$email', 0)";
-
-        if (mysqli_query($con, $sql)) {
-          echo "<script src='Js/main.js'> notificiacionExito() </script>";
-        } else {
-          echo "<p>Error: " . mysqli_error($con) . "</p>";
-        }
-      }
     }
 ?>
 
@@ -58,8 +57,8 @@
       <form
         class="formulario"
         id="formulario"
-        action="<?php agregarParticipante()?>"
-        method="post"
+        action="index.php?modulo=evento-elegido&id=<?php echo $id_evento; ?>"
+        method="POST"
       >
         <!-- Nombre del Usuario -->
         <input
